@@ -1,0 +1,5 @@
+http://www.cis.lmu.de/~weissweiler/index.php
+http://www.cis.lmu.de/~weissweiler/kolloq/index.php
+http://www.cis.lmu.de/~weissweiler/einfprog/index.php
+http://www.cis.lmu.de/~weissweiler/cistem/index.php
+http://www.cis.lmu.de/~weissweiler/cistem/bibtex/bibtex.php

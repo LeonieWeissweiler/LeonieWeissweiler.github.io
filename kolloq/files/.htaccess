@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Downloads"
+AuthUserFile /mounts/Users/student/weissweiler/public_html/kolloq/files/.htpasswd
+Require valid-user

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Gleiches Passwort wie bei den meisten CIS-Websites"
+AuthUserFile /mounts/Users/student/weissweiler/public_html/vertiefung/files/Referate/.htusers
+require valid-user
