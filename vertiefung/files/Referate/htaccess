@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "hier muss man was eingeben"
-AuthUserFile /mounts/Users/student/weissweiler/public_html/pwordner/.htusers
-require valid-user
