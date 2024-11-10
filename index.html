@@ -109,7 +109,7 @@
       <div id="news">
       <h3 #scrollspyHeading1>News</h3>
       <div class="entry-content"> 
-          <ul>
+        <ul id="news-list">
             <li>I started my postdoc at UT Austin Linguistics with Kyle Mahowald!</li>
             <li>I gave a keynote at <a href="https://konvens-2024.univie.ac.at/">KONVENS 2024</a> on "Constructions all the way down: Rethinking compositionality in LLMs". The slides are available <a href="files_top/vienna_talk.pdf">here</a>. </li>
             <li>On July 3rd, I successfully defended my PhD thesis "Computational Approaches to Construction Grammar and Morphology" and graduated <i>summa cum laude</i> with a Dr.Phil. in Computational Linguistics! A recording of the 15-minute defence talk is available <a href=videos/defence.mp4>here</a>. </li>
@@ -132,8 +132,33 @@
             <li>I presented our paper <i>CaMEL: Case Marker Extraction without Labels</i> 🐫 at <a href="https://www.2022.aclweb.org/">ACL 2022</a> in Dublin! Click <a href="files_top/camel.pdf">here</a> for the slides.</li>
             <li>Our paper <i>CaMEL: Case Marker Extraction without Labels</i> 🐫 was accepted to ACL 2022! Check it out <a href="https://aclanthology.org/2022.acl-long.377/">here</a>.</li>
           </ul>
+          <button id="show-more-btn" onclick="toggleNews()">Show More</button>
         </div>
       </div>
+
+      <script>
+        // Show only the last 10 news items initially
+        document.addEventListener("DOMContentLoaded", function() {
+          const newsItems = document.querySelectorAll("#news-list li");
+          const showMoreBtn = document.getElementById("show-more-btn");
+          const maxVisible = 10;
+      
+          // Hide all items except the last 10
+          for (let i = 0; i < newsItems.length - maxVisible; i++) {
+            newsItems[i].style.display = "none";
+          }
+      
+          // Toggle function to show/hide news items
+          window.toggleNews = function() {
+            let isExpanded = showMoreBtn.innerText === "Show Less";
+      
+            for (let i = 0; i < newsItems.length - maxVisible; i++) {
+              newsItems[i].style.display = isExpanded ? "none" : "list-item";
+            }
+            showMoreBtn.innerText = isExpanded ? "Show More" : "Show Less";
+          };
+        });
+      </script>
       <hr>
 
       <div id="publications">
