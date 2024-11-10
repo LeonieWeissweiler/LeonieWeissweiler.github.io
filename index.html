@@ -36,6 +36,12 @@
         body {
             position: relative;
         }
+        #show-more-btn {
+        background-color: #f8f9fa; /* Light gray */
+        border-color: #ddd;       /* Border to match the light gray */
+        color: #333;              /* Darker text color for readability */
+      }
+
     </style>
 </head>
 
@@ -137,14 +143,14 @@
       </div>
       
       <script>
-        // Show only the last 10 news items initially
+        // Show only the top 10 news items initially
         document.addEventListener("DOMContentLoaded", function() {
           const newsItems = document.querySelectorAll("#news-list li");
           const showMoreBtn = document.getElementById("show-more-btn");
           const maxVisible = 10;
       
-          // Hide all items except the last 10
-          for (let i = 0; i < newsItems.length - maxVisible; i++) {
+          // Hide all items after the first 10
+          for (let i = maxVisible; i < newsItems.length; i++) {
             newsItems[i].style.display = "none";
           }
       
@@ -152,7 +158,7 @@
           window.toggleNews = function() {
             let isExpanded = showMoreBtn.innerText === "Show Less";
       
-            for (let i = 0; i < newsItems.length - maxVisible; i++) {
+            for (let i = maxVisible; i < newsItems.length; i++) {
               newsItems[i].style.display = isExpanded ? "none" : "list-item";
             }
             showMoreBtn.innerText = isExpanded ? "Show More" : "Show Less";
