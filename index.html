@@ -125,8 +125,12 @@
       <h3 id="scrollspyHeading1">News</h3>
       <div class="entry-content"> 
         <ul id="news-list">
-          <li>Invited talk at ITU Copenhagen on "Constructions all the way down: rethinking linguistic generalisation in LLMs".</li>
+          <li>Invited talk at the Gothenburg University on "Comprehensively Evaluating Language in Language Models".</li>
+          <li>Our paper <a href="https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.600/134999">MultiBLiMP 1.0: A Massively Multilingual Benchmark of Linguistic Minimal Pairs</a> has been published at <a href="https://transacl.org/index.php/tacl">TACL</a>.</li>
+          <li>Invited talk at University of Vienna on "Comprehensively Evaluating Language in Language Models".</li>
+          <li>Invited talk at ITU Copenhagen on "Comprehensively Evaluating Language in Language Models".</li>
           <li>Our paper <a href="https://arxiv.org/abs/2503.06048"><i>Constructions are Revealed in Word Distributions</i></a> was featured as a Senior Area Chair Highlight at EMNLP!</li>
+          <li>Our paper <a href="https://nejlt.ep.liu.se/article/view/5256/5192">Hybrid Human-LLM Corpus Construction and LLM Evaluation for the Caused-Motion Construction</a> has been published in <a href="https://www.nejlt.org/">NEJLT</a>.</li>
           <li>I joined the <a href="https://ellis.eu/">European Laboratory for Learning and Intelligent Systems (ELLIS) e.V.</a> as a member.</li>
           <li>Invited talk at Bochum University on "Constructions all the way down: rethinking linguistic generalisation in LLMs".</li>
           <li>I was a co-organiser of the <a href="https://sites.google.com/view/2ndcxgsnlpworkshop/home">Second International Workshop on Construction Grammars and NLP</a>, co-located with the <a href="https://iwcs2025.github.io/index">16th International Conference on Computational Semantics (IWCS)</a> in Düsseldorf.</li>
@@ -206,15 +210,27 @@
 
         <br>
         <br>
-        Jaap Jumelet, <b>Leonie Weissweiler</b>, Joakim Nivre, Arianna Bisazza (2025). <i>MultiBLiMP 1.0: A massively multilingual benchmark of linguistic minimal pairs</i>. Transactions of the Association for Computational Linguistics (TACL), <i>to appear</i>. (<b>TACL</b>)<br>
+        Jaap Jumelet, <b>Leonie Weissweiler</b>, Joakim Nivre, Arianna Bisazza (2025). <i>MultiBLiMP 1.0: A massively multilingual benchmark of linguistic minimal pairs</i>. Transactions of the Association for Computational Linguistics. (<b>TACL</b>)<br>
           <a id="multiblimp_abstract_button" data-bs-toggle="collapse" href="#multiblimp_abstract" role="button" aria-expanded="false" aria-controls="multiblimp_abstract">Abstract</a>
-          <a href="https://arxiv.org/pdf/2504.02768" target="_blank">PDF</a>
+          <a href="https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.600/2577913/tacl.a.600.pdf" target="_blank">PDF</a>
           <br>
           <div class="collapse" id="multiblimp_abstract" style="padding-top: 20px">
             <div class="card card-body">
               <small>We introduce MultiBLiMP 1.0, a massively multilingual benchmark of linguistic minimal pairs, covering 101 languages and 2 types of subject-verb agreement, containing more than 128,000 minimal pairs. Our minimal pairs are created using a fully automated pipeline, leveraging the large-scale linguistic resources of Universal Dependencies and UniMorph. MultiBLiMP evaluates abilities of LLMs at an unprecedented multilingual scale, and highlights the shortcomings of the current state-of-the-art in modelling low-resource languages.</small>
             </div>
           </div>
+
+        <br>
+
+        <b>Leonie Weissweiler</b>, Abdullatif Köksal, Hinrich Schütze (2025). <i>Hybrid Human-LLM Corpus Construction and LLM Evaluation for the Caused-Motion Construction</i>. Northern European Journal of Language Technology. (<b>NEJLT</b>)<br>
+        <a id="cmc_abstract_button" data-bs-toggle="collapse" href="#cmc_abstract" role="button" aria-expanded="false" aria-controls="cmc_abstract">Abstract</a>
+        <a href="https://nejlt.ep.liu.se/article/view/5256/5192" target="_blank">PDF</a>
+        <br>
+        <div class="collapse" id="cmc_abstract" style="padding-top: 20px">
+          <div class="card card-body">
+            <small>The caused-motion construction (CMC, “She sneezed the foam off her cappuccino”) is one of the most well-studied constructions in Construction Grammar (CxG). It is a prime example for describing how constructions must carry meaning, as otherwise the fact that “sneeze” in this context takes two arguments and causes motion cannot be explained. We form the hypothesis that this remains challenging even for state-of-the-art Large Language Models (LLMs), for which we devise a test based on substituting the verb with a prototypical motion verb. To be able to perform this test at a statistically significant scale, in the absence of adequate CxG corpora, we develop a novel pipeline of NLP-assisted collection of linguistically annotated text. We show how dependency parsing and LLMs can be used to significantly reduce annotation cost and thus enable the annotation of rare phenomena at scale. We then evaluate OpenAI, Gemma3, Llama3, OLMo2, Mistral and Aya models for their understanding of the CMC using the newly collected corpus. We find that most models struggle with understanding the motion component that the CMC adds to a sentence.</small>
+          </div>
+        </div>
 
         <br>
 
@@ -225,18 +241,6 @@
         <div class="collapse" id="so_that_abstract" style="padding-top: 20px">
           <div class="card card-body">
             <small>In this paper, we make a contribution that can be understood from two perspectives: from an NLP perspective, we introduce a small challenge dataset for NLI with large lexical overlap, which minimises the possibility of models discerning entailment solely based on token distinctions, and show that GPT-4 and Llama 2 fail it with strong bias. We then create further challenging sub-tasks in an effort to explain this failure. From a Computational Linguistics perspective, we identify a group of constructions with three classes of adjectives which cannot be distinguished by surface features. This enables us to probe for LLM's understanding of these constructions in various ways, and we find that they fail in a variety of ways to distinguish between them, suggesting that they don't adequately represent their meaning or capture the lexical properties of phrasal heads.</small>
-          </div>
-        </div>
-
-        <br>
-
-        <b>Leonie Weissweiler</b>,  Abdullatif Köksal, Hinrich Schütze (2024). <i>Hybrid Human-LLM Corpus Construction and LLM Evaluation for Rare Linguistic Phenomena</i>. arXiv preprint. (<b>arXiv</b>)<br>
-        <a id="cmc_abstract_button" data-bs-toggle="collapse" href="#cmc_abstract" role="button" aria-expanded="false" aria-controls="cmc_abstract">Abstract</a>
-        <a href="https://arxiv.org/pdf/2403.06965" target="_blank">PDF</a>
-        <br>
-        <div class="collapse" id="cmc_abstract" style="padding-top: 20px">
-          <div class="card card-body">
-            <small>Argument Structure Constructions (ASCs) are one of the most well-studied construction groups, providing a unique opportunity to demonstrate the usefulness of Construction Grammar (CxG). For example, the caused-motion construction (CMC, ``She sneezed the foam off her cappuccino'') demonstrates that constructions must carry meaning, otherwise the fact that ``sneeze'' in this context causes movement cannot be explained. We form the hypothesis that this remains challenging even for state-of-the-art Large Language Models (LLMs), for which we devise a test based on substituting the verb with a prototypical motion verb. To be able to perform this test at statistically significant scale, in the absence of adequate CxG corpora, we develop a novel pipeline of NLP-assisted collection of linguistically annotated text. We show how dependency parsing and GPT-3.5 can be used to significantly reduce annotation cost and thus enable the annotation of rare phenomena at scale. We then evaluate GPT, Gemini, Llama2 and Mistral models for their understanding of the CMC using the newly collected corpus. We find that all models struggle with understanding the motion component that the CMC adds to a sentence.</small>
           </div>
         </div>
 
