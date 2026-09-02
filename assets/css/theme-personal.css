@@ -1,0 +1,22 @@
+/* ============================================================
+   Leonie Weissweiler — colour theme
+   Same variable names as lion-lab/assets/css/theme-lab.css, so the
+   shared design-system CSS works unchanged with either theme.
+   ============================================================ */
+:root {
+  /* Brand colours */
+  --lion-main:        #2E436B;   /* navbar background */
+  --lion-light:       #6B82AC;   /* light accent */
+  --lion-dark:        #2E436B;   /* links, dashes, tags, rules */
+  --lion-darkest:     #1B2A47;   /* hover states */
+
+  /* Neutrals — cooled off slightly to sit next to the navy */
+  --lion-ink:         #14181f;   /* headings */
+  --lion-body:        #2f3540;   /* body text */
+  --lion-muted:       #6a7280;   /* secondary text, emails */
+  --lion-faint:       #97a0ad;   /* metadata, captions */
+  --lion-border:      #e6dccd;   /* dividers, card borders */
+  --lion-bg-tint:     #f1ebe0;   /* subtle background blocks */
+  --lion-bg-page:     #F8F2E8;   /* page background */
+  --lion-white:       #ffffff;
+}

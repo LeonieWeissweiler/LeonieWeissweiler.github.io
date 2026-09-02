@@ -1,0 +1,46 @@
+name: Update publications from Google Scholar
+
+# Refreshes _data/publications.yml. Runs weekly, and can be triggered by hand
+# from the Actions tab.
+#
+# CAVEAT: Google Scholar serves a CAPTCHA to datacenter IP ranges, and GitHub's
+# runners are squarely in those ranges. This job will therefore fail some or
+# most of the time — that is expected, and it fails loudly without touching the
+# committed data. When it does, run the script yourself:
+#
+#     python3 bin/update_publications.py
+#
+# and commit the result.
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"   # Mondays, 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape Google Scholar
+        run: python3 bin/update_publications.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- _data/publications.yml; then
+            echo "No publication changes."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/publications.yml
+          git commit -m "Update publications from Google Scholar"
+          git push

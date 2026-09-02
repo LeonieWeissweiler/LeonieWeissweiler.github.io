@@ -1,0 +1,171 @@
+# Auto-generated from Google Scholar by bin/update_publications.py —
+# do not edit by hand; your changes will be overwritten on the next run.
+#
+# Source: https://scholar.google.com/citations?user=o4fK4n4AAAAJ
+# Last updated: 2026-07-31
+
+- title: "Language Models Learn Constructional Semantics, Not To Mention Syntax: Investigating LM Understanding of Paired-Focus Constructions"
+  authors: "Wesley Scivetti, Ethan Gotlieb Wilcox, Nathan Schneider, Kanishka Misra, Leonie Weissweiler"
+  venue: "30th Conference on Computational Natural Language Learning (CoNLL)"
+  year: "2026"
+  url: "https://aclanthology.org/2026.conll-main.15/"
+
+- title: "Proceedings of the Second International Workshop on Construction Grammars and NLP"
+  authors: "Claire Bonial, Melissa Torgbi, Leonie Weissweiler, Austin Blodgett, Katrien Beuls, Paul Van Eecke, Harish Tayyar Madabushi"
+  venue: "Proceedings of the Second International Workshop on Construction Grammars and NLP"
+  year: "2025"
+  url: "https://aclanthology.org/2025.cxgsnlp-1.0.pdf"
+
+- title: "Findings of the UniDive 2025 shared task on multilingual Morpho-Syntactic Parsing"
+  authors: "Omer Goldman, Leonie Weissweiler, Kutay Acar, Diego Alves, Anna Bączkowska, Gülşen Eryiğit, Lenka Krippnerová, Adriana Pagano, Tanja Samardzic, Luigi Talamo, Alina Wróblewska, Daniel Zeman, Joakim Nivre, Reut Tsarfay"
+  venue: "Proceedings of The UniDive 2025 Shared Task on Multilingual Morpho-Syntactic Parsing"
+  year: "2025"
+  url: "https://aclanthology.org/2025.unidive-1.1/"
+
+- title: "BabyLM's First Constructions: Causal interventions provide a signal of learning"
+  authors: "Joshua Rozner, Leonie Weissweiler, Cory Shain"
+  venue: "Empirical Methods in Natural Language Processing (EMNLP)"
+  year: "2025"
+  url: "https://aclanthology.org/2025.emnlp-main.113/"
+
+- title: "MultiBLiMP 1.0: A massively multilingual benchmark of linguistic minimal pairs"
+  authors: "Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza"
+  venue: "Transactions of the Association for Computational Linguistics (TACL)"
+  year: "2025"
+  url: "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.600/134999"
+
+- title: "Both direct and indirect evidence contribute to dative alternation preferences in language models"
+  authors: "Qing Yao, Kanishka Misra, Leonie Weissweiler, Kyle Mahowald"
+  venue: "Conference on Language Modeling (COLM)"
+  year: "2025"
+  url: "https://arxiv.org/abs/2503.20850"
+
+- title: "Constructions are revealed in word distributions"
+  authors: "Joshua Rozner, Leonie Weissweiler, Kyle Mahowald, Cory Shain"
+  venue: "Empirical Methods in Natural Language Processing (EMNLP)"
+  year: "2025"
+  url: "https://aclanthology.org/2025.emnlp-main.108/"
+
+- title: "Linguistic generalizations are not rules: Impacts on evaluation of LMs"
+  authors: "Leonie Weissweiler, Kyle Mahowald, Adele Goldberg"
+  venue: "Second International Workshop on Construction Grammars and NLP (CxG+NLP)"
+  year: "2025"
+  url: "https://aclanthology.org/2025.cxgsnlp-1.7/"
+
+- title: "Derivational Morphology Reveals Analogical Generalization in Large Language Models"
+  authors: "Valentin Hofmann, Leonie Weissweiler, David Mortensen, Hinrich Schütze, Janet Pierrehumbert"
+  venue: "Proceedings of the National Academy of Sciences (PNAS)"
+  year: "2024"
+  url: "https://www.pnas.org/doi/abs/10.1073/pnas.2423232122"
+
+- title: "SynthEval: Hybrid Behavioral Testing of NLP Models with Synthetic Evaluation"
+  authors: "Raoyuan Zhao, Abdullatif Köksal, Yihong Liu, Leonie Weissweiler, Anna Korhonen, Hinrich Schütze"
+  venue: "Findings of Empirical Methods in Natural Language Processing (EMNLP)"
+  year: "2024"
+
+- title: "Models Can and Should Embrace the Communicative Nature of Human-Generated Math"
+  authors: "Sasha Boguraev, Ben Lipkin, Leonie Weissweiler, Kyle Mahowald"
+  venue: "Workshop on Mathematical Reasoning and AI, NEURIPS"
+  year: "2024"
+  url: "https://arxiv.org/abs/2409.17005"
+
+- title: "Proceedings of the Sixth Workshop on Teaching NLP"
+  authors: "Sana Al-Azzawi, Laura Biester, György Kovács, Ana Marasović, Leena Mathur, Margot Mieskes, Leonie Weissweiler"
+  venue: "Proceedings of the Sixth Workshop on Teaching NLP"
+  year: "2024"
+  url: "https://aclanthology.org/2024.teachingnlp-1.0.pdf"
+
+- title: "Collaborative Development of Modular Open Source Educational Resources for Natural Language Processing"
+  authors: "Matthias Aßenmacher, Andreas Stephan, Leonie Weissweiler, Erion Çano, Ingo Ziegler, Marwin Härttrich, Bernd Bischl, Benjamin Roth, Christian Heumann, Hinrich Schütze"
+  venue: "Sixth Workshop on Teaching NLP"
+  year: "2024"
+  url: "https://aclanthology.org/2024.teachingnlp-1.6/"
+
+- title: "Computational Approaches to Construction Grammar and Morphology"
+  authors: "Leonie Weissweiler"
+  venue: "LMU Munich"
+  year: "2024"
+  url: "https://edoc.ub.uni-muenchen.de/35935/"
+
+- title: "Constructions Are So Difficult That Even Large Language Models Get Them Right for the Wrong Reasons"
+  authors: "Shijia Zhou, Leonie Weissweiler, Taiqi He, Hinrich Schütze, David R Mortensen, Lori Levin"
+  venue: "Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)"
+  year: "2024"
+  url: "https://aclanthology.org/2024.lrec-main.336/"
+
+- title: "Verbing Weirds Language (Models): Evaluation of English Zero-Derivation in Five LLMs"
+  authors: "David R Mortensen, Valentina Izrailevitch, Yunze Xiao, Hinrich Schütze, Leonie Weissweiler"
+  venue: "Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)"
+  year: "2024"
+  url: "https://aclanthology.org/2024.lrec-main.1508/"
+
+- title: "UCxn: Typologically Informed Annotation of Constructions Atop Universal Dependencies"
+  authors: "Leonie Weissweiler, Nina Böbel, Kirian Guiller, Santiago Herrera, Wesley Scivetti, Arthur Lorenzi, Nurit Melnik, Archna Bhatia, Hinrich Schütze, Lori Levin, Amir Zeldes, Joakim Nivre, William Croft, Nathan Schneider"
+  venue: "Joint International Conference on Computational Linguistics, Language Resources and Evaluation"
+  year: "2024"
+  url: "https://aclanthology.org/2024.lrec-main.1471/"
+
+- title: "Hybrid Human-LLM Corpus Construction and LLM Evaluation for the Caused-Motion Construction"
+  authors: "Leonie Weissweiler, Abdullatif Köksal, Hinrich Schütze"
+  venue: "Northern European Journal of Language Technology (NEJLT)"
+  year: "2024"
+  url: "https://nejlt.ep.liu.se/article/view/5256"
+
+- title: "Counting the Bugs in ChatGPT's Wugs: A Multilingual Investigation into the Morphological Capabilities of a Large Language Model"
+  authors: "Leonie Weissweiler, Valentin Hofmann, Anjali Kantharuban, Anna Cai, Ritam Dutt, Amey Hengle, Anubha Kabra, Atharva Kulkarni, Abhishek Vijayakumar, Haofei Yu, Hinrich Schütze, Kemal Oflazer, David R Mortensen"
+  venue: "Empirical Methods in Natural Language Processing (EMNLP)"
+  year: "2023"
+  url: "https://aclanthology.org/2023.emnlp-main.401/"
+
+- title: "Explaining Pretrained Language Models' Understanding of Linguistic Structures using Construction Grammar"
+  authors: "Leonie Weissweiler, Valentin Hofmann, Abdullatif Köksal, Hinrich Schütze"
+  venue: "Frontiers in Artificial Intelligence"
+  year: "2023"
+  url: "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1225791/full"
+
+- title: "How to Distill your BERT: An Empirical Study on the Impact of Weight Initialisation and Distillation Objectives"
+  authors: "Xinpeng Wang, Leonie Weissweiler, Hinrich Schütze, Barbara Plank"
+  venue: "Association for Computational Linguistics (ACL)"
+  year: "2023"
+  url: "https://aclanthology.org/2023.acl-short.157/"
+
+- title: "Crosslingual Transfer Learning for Low-Resource Languages Based on Multilingual Colexification Graphs"
+  authors: "Yihong Liu, Haotian Ye, Leonie Weissweiler, Hinrich Schütze"
+  venue: "Findings of Empirical Methods in Natural Language Processing (EMNLP)"
+  year: "2023"
+  url: "https://aclanthology.org/2023.findings-emnlp.562/"
+
+- title: "A Crosslingual Investigation of Conceptualization in 1335 Languages"
+  authors: "Yihong Liu, Haotian Ye, Leonie Weissweiler, Philipp Wicke, Renhao Pei, Robert Zangenfeind, Hinrich Schütze"
+  venue: "Association for Computational Linguistics (ACL)"
+  year: "2023"
+  url: "https://aclanthology.org/2023.acl-long.726/"
+
+- title: "4.4 WG4: Finding Idiosyncrasy in Corpora"
+  authors: "Nurit Melnik, Francis Bond, Maria Koptjevskaja-Tamm, Peter Ljunglöf, Alexandre Rademaker, Agata Savary, Leonie Weissweiler"
+  venue: "Report from Dagstuhl Seminar 23191: Universals of Linguistic Idiosyncrasy in Multilingual Computational Linguistics"
+  year: "2023"
+
+- title: "Construction Grammar Provides Unique Insight into Neural Language Models"
+  authors: "Leonie Weissweiler, Taiqi He, Naoki Otani, David R Mortensen, Lori Levin, Hinrich Schütze"
+  venue: "CxGs + NLP Workshop, Georgetown University Round Table (GURT)"
+  year: "2023"
+  url: "https://aclanthology.org/2023.cxgsnlp-1.10/"
+
+- title: "The Better Your Syntax, the Better Your Semantics? Probing Pretrained Language Models for the English Comparative Correlative"
+  authors: "Leonie Weissweiler, Valentin Hofmann, Abdullatif Köksal, Hinrich Schütze"
+  venue: "Empirical Methods in Natural Language Processing (EMNLP)"
+  year: "2022"
+  url: "https://aclanthology.org/2022.emnlp-main.746/"
+
+- title: "CaMEL: Case Marker Extraction without Labels"
+  authors: "Leonie Weissweiler, Valentin Hofmann, Masoud Jalili Sabet, Hinrich Schütze"
+  venue: "Association for Computational Linguistics (ACL)"
+  year: "2022"
+  url: "https://aclanthology.org/2022.acl-long.377/"
+
+- title: "Developing a stemmer for German based on a comparative analysis of publicly available stemmers"
+  authors: "Leonie Weissweiler, Alexander Fraser"
+  venue: "German Society for Computational Linguistics (GSCL)"
+  year: "2017"
+  url: "https://link.springer.com/chapter/10.1007/978-3-319-73706-5_8"

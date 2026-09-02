@@ -1,0 +1,12 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Talk recordings — 1.6 GB, kept in OneDrive but deliberately NOT in git.
+#
+# These were originally committed via Git LFS and removed again in ac299b0.
+# Putting them back would exceed GitHub's free LFS allowance (1 GB storage,
+# 1 GB/month bandwidth), and GitHub Pages does not resolve LFS pointers, so
+# they could not be served from here anyway. YouTube embeds on /talks do that job.
+videos/

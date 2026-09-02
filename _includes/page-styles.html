@@ -1,0 +1,131 @@
+<style>
+  /* ── Shared page layout & typography ── */
+  /* Kept byte-for-byte in sync with lion-lab/_includes/page-styles.html.
+     Jekyll can only read includes from one directory, so this file cannot
+     live in the submodule — if you edit it, edit it in both repos. */
+  /* Bespoke Slab is used for all-caps labels via --lion-caps-font */
+  /* All colours reference CSS variables from theme-*.css */
+
+  .lion-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem 7rem;
+  }
+
+  .lion-page-header { margin-bottom: 4rem; }
+
+  .lion-page-header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 400;
+    color: var(--lion-ink);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin: 0 0 1.25rem;
+  }
+
+  .lion-page-rule {
+    width: 3rem;
+    height: 3px;
+    background: var(--lion-dark);
+  }
+
+  .lion-section-label {
+    font-family: var(--lion-caps-font, Georgia, serif);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lion-dark);
+    margin-bottom: 2rem;
+  }
+
+  .lion-divider {
+    border: none;
+    border-top: 1px solid var(--lion-border);
+    margin: 3.5rem 0;
+  }
+
+  .lion-prose {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1rem;
+    color: var(--lion-body);
+    line-height: 1.8;
+  }
+
+  .lion-prose p { margin-bottom: 1.25rem; }
+
+  .lion-prose a {
+    color: var(--lion-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--lion-dark);
+    transition: opacity 0.2s;
+  }
+
+  .lion-prose a:hover { opacity: 0.7; }
+
+  .lion-prose strong { color: var(--lion-ink); }
+
+  .lion-list {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .lion-list li {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.95rem;
+    color: var(--lion-body);
+    line-height: 1.6;
+    padding-left: 1.2rem;
+    position: relative;
+  }
+
+  .lion-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--lion-dark);
+    font-size: 0.8rem;
+    top: 0.15em;
+  }
+
+  .lion-list li a {
+    color: var(--lion-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--lion-dark);
+    transition: opacity 0.2s;
+  }
+
+  .lion-list li a:hover { opacity: 0.7; }
+
+  .lion-h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--lion-ink);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .lion-h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--lion-ink);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .lion-meta {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.78rem;
+    color: var(--lion-faint);
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: 700px) {
+    .lion-page { padding: 3rem 1.5rem 5rem; }
+  }
+</style>

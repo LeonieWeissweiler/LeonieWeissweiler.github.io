@@ -1,0 +1,3 @@
+[submodule "lion-lab"]
+	path = lion-lab
+	url = https://github.com/lionlabnlp/lionlabnlp.github.io

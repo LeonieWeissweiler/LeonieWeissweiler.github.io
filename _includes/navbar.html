@@ -1,0 +1,90 @@
+<nav id="lion-navbar" class="lion-navbar">
+  <div class="lion-navbar-inner">
+    <a href="{{ '/' | relative_url }}" class="lion-navbar-logo">
+      <span class="lion-logo-wordmark">
+        <span class="lion-logo-text">Leonie Weissweiler</span>
+      </span>
+    </a>
+    <button class="lion-menu-toggle" id="lion-menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="lion-nav-links" id="lion-nav-links">
+      <li><a href="/" {% if page.url == '/' %}class="lion-nav-active"{% endif %}>About</a></li>
+      <li><a href="/news" {% if page.url == '/news/' or page.url == '/news' %}class="lion-nav-active"{% endif %}>News</a></li>
+      <li><a href="/publications" {% if page.url == '/publications/' or page.url == '/publications' %}class="lion-nav-active"{% endif %}>Publications</a></li>
+      <li><a href="/talks" {% if page.url == '/talks/' or page.url == '/talks' %}class="lion-nav-active"{% endif %}>Talks</a></li>
+      <li><a href="/teaching" {% if page.url == '/teaching/' or page.url == '/teaching' %}class="lion-nav-active"{% endif %}>Teaching</a></li>
+      <li><a href="https://lionlabnlp.github.io/" target="_blank" rel="noopener" class="lion-nav-lablogo" aria-label="LION Lab">
+        <img src="{{ '/assets/img/logos/lionlab-full-white.svg' | relative_url }}" alt="LION Lab">
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  /* Navbar/​content alignment now lives in the shared lion-navbar.css. */
+
+  /* The personal site uses a text wordmark instead of a logo image. */
+  .lion-navbar-logo .lion-logo-text {
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  /* LION Lab logo sits in the nav where a text link otherwise would. */
+  /* Selector must outrank `.lion-nav-links li a` (0,1,2) from the shared
+     stylesheet, otherwise its 0.9rem side padding wins and pushes the logo
+     in from the right edge. */
+  .lion-nav-links li a.lion-nav-lablogo {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0 0.3rem 1.1rem;
+    margin-left: 0.6rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.28);
+  }
+
+  .lion-nav-lablogo img {
+    height: 52px;
+    width: auto;
+    display: block;
+    transition: opacity 0.2s, height 0.25s ease;
+  }
+
+  .lion-nav-lablogo:hover img { opacity: 0.75; }
+
+  /* Suppress the hover underline the text links get. */
+  .lion-nav-links li a.lion-nav-lablogo::after { display: none; }
+
+  /* Shrink with the bar so it never outgrows the scrolled navbar. */
+  .lion-navbar-scrolled .lion-nav-lablogo img { height: 42px; }
+
+  @media (max-width: 420px) {
+    .lion-navbar-logo .lion-logo-text { font-size: 1.05rem; }
+  }
+
+  @media (max-width: 768px) {
+    /* In the stacked mobile menu the divider rule makes no sense. */
+    .lion-nav-links li a.lion-nav-lablogo {
+      border-left: none;
+      margin-left: 0;
+      padding: 0.75rem 1.5rem;
+    }
+    .lion-nav-lablogo img { height: 46px; }
+  }
+</style>
+
+<script>
+  document.getElementById('lion-menu-toggle').addEventListener('click', function() {
+    document.getElementById('lion-nav-links').classList.toggle('lion-nav-open');
+    this.classList.toggle('lion-menu-open');
+  });
+
+  window.addEventListener('scroll', function() {
+    const nav = document.getElementById('lion-navbar');
+    if (window.scrollY > 40) {
+      nav.classList.add('lion-navbar-scrolled');
+    } else {
+      nav.classList.remove('lion-navbar-scrolled');
+    }
+  });
+</script>

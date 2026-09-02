@@ -1,0 +1,50 @@
+title: Leonie Weissweiler
+description: >
+  Leonie Weissweiler — Assistant Professor for Natural Language Processing at
+  Leipzig University. Research at the intersection of Construction Grammar,
+  Cognitive Linguistics, and NLP.
+baseurl: ""
+url: https://leonieweissweiler.github.io
+
+plugins:
+  - jekyll-sitemap
+
+css_dir: "assets/css"
+
+highlighter: rouge
+
+collections:
+  pages:
+    output: true
+    permalink: "/:title"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - .gitignore
+  - vendor
+  # ── lion-lab submodule ──────────────────────────────────────────
+  # Only lion-lab/assets/** is meant to be served (the shared CSS).
+  # Everything else in the submodule root would otherwise be built as
+  # part of this site — lion-lab/index.md in particular claims the
+  # permalink "/" and would collide with our own index.md.
+  # Underscore dirs (_includes, _layouts, _pages, _data, _config.yml)
+  # are skipped by Jekyll automatically.
+  - lion-lab/index.md
+  - lion-lab/LICENSE.md
+  - lion-lab/Gemfile
+  - lion-lab/Gemfile.lock
+  - lion-lab/netlify.toml
+  - lion-lab/package.json
+  - lion-lab/package-lock.json
+  - lion-lab/postcss.config.js
+  - lion-lab/tailwind.config.js
+  - lion-lab/bin
+  # ── old Bootstrap site (kept in the repo, not built) ────────────
+  - _old
+  # ── talk recordings: 1.6 GB of local files, never part of the build ──
+  - videos

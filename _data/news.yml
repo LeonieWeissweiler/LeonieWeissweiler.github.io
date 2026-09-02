@@ -1,0 +1,307 @@
+# News entries — most recent first.
+#
+# Each entry has:
+#   date  — free text, e.g. "June 2026".
+#   body  — HTML allowed. Use a `>-` block so you never have to escape quotes.
+#
+# To add an item, copy a block and paste it at the TOP of the list.
+
+- date: "June 2026"
+  body: >-
+    Invited talk on "Hybrid Human-LLM Corpus Construction and LLM Evaluation for the Caused-Motion Construction" at the <a href="https://fdhl.info/veranstaltungen/digital-humanities-open-garden/opengarden2026/">Digital Humanities Open Garden 2026</a>, hosted by the FDHL at the <a href="https://www.saw-leipzig.de/en">Saxon Academy of Sciences and Humanities in Leipzig</a>.
+
+- date: "June 2026"
+  body: >-
+    Invited talk on "Expanding the Linguistic Evaluation of Language Models, or: What to do now that LMs are good" at the <a href="https://www.cl.uni-heidelberg.de/colloquium/">Heidelberg Colloquium on Computational Linguistics</a>.
+
+- date: "May 2026"
+  body: >-
+    I'm going to be a tutorial chair at <a href="https://2027.coling-iccl.org/">COLING 2027</a> in Macau, together with <a href="https://www.utn.de/person/prof-dr-michael-roth/">Michael Roth</a>. We can be reached at <a href="mailto:coling27tutorialchairs@googlegroups.com">.
+
+- date: "April 2026"
+  body: >-
+    I've started a new position as Assistant Professor for Natural Language Processing at the <a href="https://www.uni-leipzig.de/en">University of Leipzig</a> <a href="https://www.mathcs.uni-leipzig.de/ifi">Institute for Computer Science</a>
+    and started my own research group, the <a href="https://lionlabnlp.github.io/">LION Lab</a> (Linguistically-Oriented NLP).
+
+- date: "March 2026"
+  body: >-
+    Invited talk at Stockholm University on "Comprehensively Evaluating Language in Language
+    Models".
+
+- date: "February 2026"
+  body: >-
+    Invited talk at Gothenburg University on "Comprehensively Evaluating Language in Language
+    Models".
+
+- date: "January 2026"
+  body: >-
+    Our paper <a href="https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.600/134999">MultiBLiMP
+    1.0: A Massively Multilingual Benchmark of Linguistic Minimal Pairs</a> has been published at <a
+    href="https://transacl.org/index.php/tacl">TACL</a>.
+
+- date: "January 2026"
+  body: >-
+    Online invited talk at the University of Vienna on "Comprehensively Evaluating Language in Language
+    Models".
+
+- date: "December 2025"
+  body: >-
+    Invited talk at ITU Copenhagen on "Comprehensively Evaluating Language in Language Models".
+
+- date: "November 2025"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2503.06048"><i>Constructions are Revealed in Word
+    Distributions</i></a> was featured as a Senior Area Chair Highlight at EMNLP!
+
+- date: "October 2025"
+  body: >-
+    Our paper <a href="https://nejlt.ep.liu.se/article/view/5256/5192">Hybrid Human-LLM Corpus
+    Construction and LLM Evaluation for the Caused-Motion Construction</a> has been published in <a
+    href="https://www.nejlt.org/">NEJLT</a>.
+
+- date: "October 2025"
+  body: >-
+    I joined the <a href="https://ellis.eu/">European Laboratory for Learning and Intelligent
+    Systems (ELLIS) e.V.</a> as a member.
+
+- date: "September 2025"
+  body: >-
+    Invited talk at Bochum University on "Constructions all the way down: rethinking linguistic
+    generalisation in LLMs".
+
+- date: "September 2025"
+  body: >-
+    I was a co-organiser of the <a
+    href="https://sites.google.com/view/2ndcxgsnlpworkshop/home">Second International Workshop on
+    Construction Grammars and NLP</a>, co-located with the <a
+    href="https://iwcs2025.github.io/index">16th International Conference on Computational Semantics
+    (IWCS)</a> in Düsseldorf.
+
+- date: "September 2025"
+  body: >-
+    I started a postdoc at <a
+    href="https://www.uu.se/en/department/linguistics-and-philology/research/computational-linguistics">Uppsala
+    University Computational Linguistics</a>, working with <a
+    href="https://jnivre.github.io/">Joakim Nivre</a> on topics related to constructions and
+    multilinguality, with continued funding from the <a
+    href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin">Walter
+    Benjamin Fellowship</a> of the <a href="https://www.dfg.de/en">German Research Foundation
+    (DFG)</a>.
+
+- date: "August 2025"
+  body: >-
+    Invited talk at JKU Linz on "Comprehensively Evaluating Language in Language Models".
+
+- date: "August 2025"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2504.02768"><i>MultiBLiMP 1.0: A Massively Multilingual
+    Benchmark of Linguistic Minimal Pairs</i></a> was accepted to TACL and will be presented at <a
+    href="https://2025.emnlp.org/">EMNLP 2025</a>.
+
+- date: "August 2025"
+  body: >-
+    Two papers accepted to EMNLP 2025! <a href="https://arxiv.org/abs/2503.06048"><i>Constructions
+    are Revealed in Word Distributions</i></a> and <a
+    href="https://arxiv.org/abs/2506.02147"><i>BabyLM's First Constructions: Causal probing provides
+    a signal of learning</i></a>.
+
+- date: "July 2025"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2503.20850"><i>Both Direct and Indirect Evidence
+    Contribute to Dative Alternation Preferences in Language Models</i></a> was accepted to <a href="https://colmweb.org/2025/">COLM 2025</a>.
+
+- date: "July 2025"
+  body: >-
+    Invited talk at TUM Heilbronn on "Comprehensively Evaluating Language in Language Models".
+
+- date: "June 2025"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2502.13195"><i>Linguistic generalizations are not
+    rules: Impacts on evaluation of LMs</i></a> was accepted to the <a
+    href="https://sites.google.com/view/2ndcxgsnlpworkshop/home">Second International Workshop on
+    Construction Grammars and NLP</a>.
+
+- date: "May 2025"
+  body: >-
+    Invited talk at Copenhagen University on "Constructions all the way down: rethinking linguistic
+    generalisation in LLMs".
+
+- date: "March 2025"
+  body: >-
+    I received a Short Term Scientific Mission (STSM) grant through the <a
+    href="https://unidive.lisn.upsaclay.fr/doku.php?id=start">UniDive COST Action</a> to visit
+    Uppsala University for one month from May to June 2025.
+
+- date: "May 2025"
+  body: >-
+    Invited talks at LMU Munich and Leipzig University on "Understanding Language in Language Models: The Role of
+    Constructions in LM Interpretability".
+
+- date: "April 2025"
+  body: >-
+    Invited talks at Stanford University and the University of Nevada at Reno on the topic of
+    "Constructions all the way down: rethinking linguistic generalisation in LLMs".
+
+- date: "February 2025"
+  body: >-
+    Our paper <a href="https://www.pnas.org/doi/full/10.1073/pnas.2423232122"><i>Derivational
+    Morphology Reveals Analogical Generalization in Large Language Models</i></a> was accepted to
+    PNAS.
+
+- date: "December 2024"
+  body: >-
+    My DFG Walter Benjamin Fellowship proposal <i>A Computational Exploration of Construction
+    Learning</i> was approved!
+
+- date: "October 2024"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2409.17005"><i>Models Can and Should Embrace the
+    Communicative Nature of Human-Generated Math</i></a> was accepted at the <a href="https://mathai2024.github.io/">NEURIPS 2024 workshop
+    on Mathematical Reasoning and AI</a>!
+
+- date: "October 2024"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2408.17437"><i>SYNTHEVAL: Hybrid Behavioral Testing of
+    NLP Models with Synthetic CheckLists</i></a> was accepted to Findings of <a href="https://2024.emnlp.org/">EMNLP 2024</a>.
+
+- date: "September 2024"
+  body: >-
+    I started my postdoc at UT Austin Linguistics with Kyle Mahowald!
+
+- date: "September 2024"
+  body: >-
+    I gave a keynote at <a href="https://konvens-2024.univie.ac.at/">KONVENS 2024</a> on
+    "Constructions all the way down: Rethinking compositionality in LLMs". The slides are available
+    <a href="/files_top/vienna_talk.pdf">here</a>.
+
+- date: "August 2024"
+  body: >-
+    I was a co-organiser of the <a href="https://sites.google.com/view/teachingnlpacl2024">Sixth
+    Workshop on Teaching NLP</a>, co-located with <a href="https://2024.aclweb.org/">ACL 2024</a> in
+    Bangkok.
+
+- date: "July 2024"
+  body: >-
+    On July 3rd, I successfully defended my PhD thesis "Computational Approaches to Construction
+    Grammar and Morphology" and graduated <i>summa cum laude</i> with a Dr.Phil. in Computational
+    Linguistics! A recording of the 15-minute defence talk is available <a
+    href="https://www.youtube.com/watch?v=BpujjPe_lYU">here</a>.
+
+- date: "April 2024"
+  body: >-
+    Invited talks at NYU, Boston University, MIT, UPenn, CMU, and Cornell on the topic of "Finding
+    the Limits of LLMs with Constructions".
+
+- date: "February 2024"
+  body: >-
+    I will be visiting <a href="https://adele.princeton.edu/">Adele Goldberg</a> at <a
+    href="https://www.princeton.edu/">Princeton University</a> for 3 months, starting in April 2024,
+    to work on Construction Grammar and LLMs!
+
+- date: "February 2024"
+  body: >-
+    Three papers accepted to LREC-COLING 2024! <a href="https://arxiv.org/pdf/2403.17748"><i>UCxn:
+    Typologically Informed Annotation of Constructions Atop Universal Dependencies</i></a>, <a
+    href="https://arxiv.org/pdf/2403.17760"><i>Constructions Are So Difficult That Even Large
+    Language Models Get Them Right for the Wrong Reasons</i></a> and <a
+    href="https://arxiv.org/pdf/2403.17856"><i>Verbing Weirds Language (Models): Evaluation of
+    English Zero-Derivation in Five LLMs</i></a>.
+
+- date: "November 2023"
+  body: >-
+    Invited talk at the <a href="https://sites.google.com/view/sail-ws-llms/home">SAIL workshop on
+    Fundamental Limits of Large Language Models</a> at the University of Bielefeld. Check out the
+    video <a href="https://www.youtube.com/watch?v=cud7oqj6kik">here</a>!
+
+- date: "October 2023"
+  body: >-
+    Two papers accepted to EMNLP 2023! <a
+    href="https://arxiv.org/ftp/arxiv/papers/2310/2310.15113.pdf"><i>Counting the Bugs in ChatGPT's
+    Wugs: A Multilingual Investigation into the Morphological Capabilities of a Large Language
+    Model</i></a> and <a href="https://arxiv.org/pdf/2305.12818.pdf"><i>Crosslingual Transfer
+    Learning for Low-Resource Languages Based on Multilingual Colexification Graphs</i></a>.
+
+- date: "September 2023"
+  body: >-
+    Invited talk at the "Poetik, Praxis und Hermeneutik Künstlicher Intelligenz" workshop at the <a
+    href="https://www.fritz-thyssen-stiftung.de/">Fritz Thyssen Foundation</a> in Cologne, on LLMs
+    as the newest battlefield of the Linguistics Wars, featuring opinions by Noam Chomsky, Adele
+    Goldberg, Steve Piantadosi and myself. Slides (in German) are available <a
+    href="/files_top/linguistics_wars.pdf">here</a>.
+
+- date: "June 2023"
+  body: >-
+    Invited talk at <a href="https://biu-nlp.github.io/">Bar Ilan University NLP</a>.
+
+- date: "May 2023"
+  body: >-
+    Two papers accepted to ACL 2023! <a href="https://arxiv.org/pdf/2305.08475.pdf"><i>A
+    Crosslingual Investigation of Conceptualization in 1335 Languages</i></a> and <a
+    href="https://arxiv.org/pdf/2305.15032.pdf"><i>How to Distill your BERT: An Empirical Study on
+    the Impact of Weight Initialisation and Distillation Objectives</i></a>.
+
+- date: "May 2023"
+  body: >-
+    I presented <i>The Better Your Syntax, the Better Your Semantics? Probing Pretrained Language
+    Models for the English Comparative Correlative</i> at the <a
+    href="https://multiword.org/mwe2023/">19th Workshop on Multiword Expressions</a> at EACL. Check
+    out the <a href="/files_top/presentation_eacl_without_video.pdf">slides</a>!
+
+- date: "April 2023"
+  body: >-
+    Invited talk at <a href="https://www.benjaminroth.net/">Ben Roth's Lab</a> at the University of
+    Vienna.
+
+- date: "March 2023"
+  body: >-
+    Invited <a href="https://rycolab.io/talk/weissweiler-mar-01-23/">talk</a> at <a
+    href="https://rycolab.io/">Ryan Cotterell's Lab</a> at ETH Zürich on construction grammar and
+    how we can use it to formulate new goals for syntactic and semantic probing.
+
+- date: "February 2023"
+  body: >-
+    Invited talk at <a href="https://munich-nlp.github.io/">MunichNLP</a> on the joint history of
+    NLP and Linguistics and how we can learn from each other going forward.
+
+- date: "January 2023"
+  body: >-
+    Our paper <i>Construction Grammar Provides Unique Insight into Neural Language Models</i> was
+    accepted to the <a
+    href="https://gurt.georgetown.edu/gurt-2023/cxgsnlp-call-for-papers/">CxGs+NLP Workshop</a> at
+    the <a href="https://gurt.georgetown.edu/gurt-2023/">Georgetown University Round Table 2023</a>!
+    Check it out <a href="https://arxiv.org/abs/2302.02178">here</a>.
+
+- date: "October 2022"
+  body: >-
+    Our paper <i>The Better Your Syntax, the Better Your Semantics? Probing Pretrained Language
+    Models for the English Comparative Correlative</i> was accepted to <a href="https://2022.emnlp.org/">EMNLP 2022</a>! Check it out <a
+    href="https://arxiv.org/abs/2210.13181">here</a>.
+
+- date: "July 2022"
+  body: >-
+    Invited at the <a
+    href="https://scads.ai/education/summer-schools/scads-ai-summer-school-2022/">8th International
+    ScaDS Summer School 2022</a> in Leipzig on the joint history of NLP and Linguistics and how we
+    can learn from each other going forward! Here are the <a
+    href="https://scads.ai/education/summer-schools/scads-ai-summer-school-2022/leonie-weissweiler%ef%bf%bc/">abstract</a>
+    and <a href="/files_top/scads.pdf">slides</a>.
+
+- date: "June 2022"
+  body: >-
+    I will be visiting <a href="http://www.cs.cmu.edu/~dmortens/">David Mortensen</a> and <a
+    href="http://www.cs.cmu.edu/~lsl/">Lori Levin</a>'s <a
+    href="https://llab-cmu.github.io/">Linguistics Lab</a> at the <a
+    href="https://www.lti.cs.cmu.edu/">Language Technologies Institute</a> at <a
+    href="https://www.cmu.edu/">Carnegie Mellon University</a> for 3 months, starting in mid-July
+    2022, to work on Construction Grammar and NLP!
+
+- date: "May 2022"
+  body: >-
+    I presented our paper <i>CaMEL: Case Marker Extraction without Labels</i> 🐫 at <a
+    href="https://www.2022.aclweb.org/">ACL 2022</a> in Dublin! Click <a
+    href="/files_top/camel.pdf">here</a> for the slides.
+
+- date: "February 2022"
+  body: >-
+    Our paper <i>CaMEL: Case Marker Extraction without Labels</i> 🐫 was accepted to ACL 2022! Check
+    it out <a href="https://aclanthology.org/2022.acl-long.377/">here</a>.
