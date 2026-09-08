@@ -25,7 +25,7 @@ permalink: /
   }
 
   .about-hero h1 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--lion-heading-font);
     font-size: clamp(2.6rem, 5.5vw, 4rem);
     font-weight: 400;
     color: var(--lion-ink);
@@ -44,15 +44,21 @@ permalink: /
   /* Deliberately set in the heading face, not the body face, so it reads as a
      subtitle to the name rather than as the first line of the bio. */
   .about-role {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+    font-family: var(--lion-heading-font);
+    /* As large as fits on one line. Bespoke Slab sets ~15% wider than Playfair
+       did, so this is retuned for it: the longer line needs ~1.44vw across the
+       two-column range, and 1.14rem against the 642px column once the page
+       stops growing. Both backed off ~3% for safety. */
+    font-size: clamp(0.78rem, 1.4vw, 1.1rem);
     font-weight: 400;
     color: var(--lion-ink);
     line-height: 1.4;
     margin: 1.5rem 0 0;
+    text-wrap: balance;
   }
 
-  .about-role-next { margin: 0.35rem 0 1.75rem; }
+  /* tight below: the leftover height here is what the lab logo grows into */
+  .about-role-next { margin: 0.35rem 0 0.6rem; }
 
   .about-role a {
     color: var(--lion-dark);
@@ -99,14 +105,42 @@ permalink: /
     gap: 1.6rem;
   }
 
-  /* Wraps onto as many lines as it needs within the photo's width. */
+  /* Six links across the photo's width. The source order (see index markup)
+     is chosen to wrap them 3 + 3; the column gap is kept fairly tight so that
+     split survives down to a narrower viewport before it breaks up again. */
   .about-social {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
+    /* same width as the photo above it, so their edges line up */
+    width: 92%;
+    /* A 3-column grid rather than wrapping flex: the split stays 3 + 3 at any
+       container width, instead of flipping to 4 + 2 once there's room for a
+       fourth. space-between puts column 1 flush left and column 3 flush right,
+       so Email's left edge and LinkedIn's right edge meet the photo's edges. */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    gap: 0.75rem 1.125rem;
     align-items: center;
+  }
+
+  /* right-align the third column so X sits under LinkedIn, both flush right */
+  .about-social a:nth-child(3n) { justify-self: end; }
+
+  /* The three columns need ~309px including gaps. Below ~1150px the column
+     tightens, so drop the minimum gap; space-between re-widens it wherever
+     there is room. */
+  @media (max-width: 1150px) {
+    .about-social { column-gap: 0.4rem; }
+  }
+
+  /* Below ~1040px three columns no longer fit and the labels would wrap inside
+     their cells. Fall back to two columns over three rows rather than
+     collapsing the whole hero — there is still plenty of horizontal room here.
+     Column 1 stays flush left and column 2 flush right, so Email's left edge
+     and LinkedIn's right edge still meet the photo's. */
+  @media (max-width: 1040px) and (min-width: 901px) {
+    .about-social { grid-template-columns: auto auto; }
+    .about-social a:nth-child(3n) { justify-self: auto; }
+    .about-social a:nth-child(2n) { justify-self: end; }
   }
 
   .about-social a {
@@ -136,7 +170,8 @@ permalink: /
   /* Photo with corner bracket decoration */
   .about-photo-wrap {
     position: relative;
-    width: 80%;
+    /* same width as the social row beneath, so their edges line up */
+    width: 92%;
   }
 
   .about-photo {
@@ -214,7 +249,9 @@ permalink: /
 
   .see-all-link:hover { opacity: 0.7; }
 
-  @media (max-width: 800px) {
+  /* Stack at 900px — below this the two-column hero genuinely runs out of
+     width. Between 900 and 1040 the socials drop to two columns instead. */
+  @media (max-width: 900px) {
     .about-hero {
       grid-template-columns: 1fr;
       gap: 2.5rem;
@@ -223,7 +260,16 @@ permalink: /
        the logo go back to a fixed size — there is no leftover height to fill. */
     .about-hero-right { align-items: flex-start; }
     .about-photo-wrap { width: 260px; }
-    .about-social { width: 100%; }
+    /* stacked: the column is full-page width, so a fixed 3-up grid would leave
+       huge gaps — let them pack naturally instead */
+    .about-social {
+      width: 100%;
+      min-width: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .about-social a:nth-child(3n) { justify-self: auto; }
     .about-lablogo { flex: 0 0 auto; position: static; margin-bottom: 0.5rem; }
     .about-lablogo img { position: static; width: 240px; height: auto; aspect-ratio: 5250 / 2000; }
   }
@@ -267,6 +313,12 @@ permalink: /
           <img src="{{ '/assets/img/logos/scholar.png' | relative_url }}" alt="">
           Google Scholar
         </a>
+        <!-- Order is chosen so the six wrap 3 + 3 rather than 2 + 3 + 1:
+             the short "X" closes the first line after the long "Google Scholar". -->
+        <a href="https://x.com/LAWeissweiler" target="_blank" rel="noopener">
+          <img src="{{ '/assets/img/logos/twitter.svg' | relative_url }}" alt="">
+          X
+        </a>
         <a href="https://github.com/LeonieWeissweiler" target="_blank" rel="noopener">
           <img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="">
           GitHub
@@ -274,10 +326,6 @@ permalink: /
         <a href="https://bsky.app/profile/weissweiler.bsky.social" target="_blank" rel="noopener">
           <img src="{{ '/assets/img/logos/bluesky.svg' | relative_url }}" alt="">
           Bluesky
-        </a>
-        <a href="https://x.com/LAWeissweiler" target="_blank" rel="noopener">
-          <img src="{{ '/assets/img/logos/twitter.svg' | relative_url }}" alt="">
-          X
         </a>
         <a href="https://www.linkedin.com/in/leonie-wei%C3%9Fweiler-16b080417/" target="_blank" rel="noopener">
           <img src="{{ '/assets/img/logos/linkedin.png' | relative_url }}" alt="">
@@ -289,6 +337,15 @@ permalink: /
 
   <!-- Bio -->
   <div class="lion-prose">
+    <p>
+      I am an assistant professor of Natural Language Processing at
+      <a href="https://www.uni-leipzig.de/en" target="_blank" rel="noopener">Leipzig University</a>,
+      head of the <a href="https://lionlabnlp.github.io/" target="_blank" rel="noopener">LION (Linguistically-Oriented NLP) Lab</a>,
+      and a PI of <a href="https://scads.ai/" target="_blank" rel="noopener">ScaDS.AI</a>.
+      I'm also a liaison professor (Vertrauensdozentin) for the
+      <a href="https://www.studienstiftung.de/en/" target="_blank" rel="noopener">German Academic Scholarship Foundation</a>
+      (Studienstiftung des deutschen Volkes).
+    </p>
     <p>
       Before moving to Leipzig, I was a postdoc at
       <a href="https://www.uu.se/en/department/linguistics-and-philology/research/computational-linguistics" target="_blank" rel="noopener">Uppsala University Computational Linguistics</a>,
@@ -337,11 +394,7 @@ permalink: /
     <li>Evaluation and interpretability for low-resource languages</li>
   </ul>
 
-  <hr class="lion-divider">
-
   {% include work-with-me.html %}
-
-  <hr class="lion-divider">
 
   <!-- News preview -->
   <p class="lion-section-label">Latest News</p>

@@ -16,7 +16,7 @@ permalink: /teaching/
   .course-entry:first-of-type { border-top: 1px solid var(--lion-border); }
 
   .course-name {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--lion-heading-font);
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--lion-ink);

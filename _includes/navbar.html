@@ -24,8 +24,13 @@
 <style>
   /* Navbar/​content alignment now lives in the shared lion-navbar.css. */
 
-  /* The personal site uses a text wordmark instead of a logo image. */
+  /* The personal site uses a text wordmark instead of a logo image, set in the
+     same face as the nav links rather than the shared stylesheet's Playfair.
+     Weight 400 because only a regular cut of Bespoke Slab is bundled — 600
+     would be synthesised. */
   .lion-navbar-logo .lion-logo-text {
+    font-family: var(--lion-heading-font);
+    font-weight: 400;
     font-size: 1.35rem;
     letter-spacing: 0.02em;
     white-space: nowrap;
@@ -43,8 +48,20 @@
     border-left: 1px solid rgba(255, 255, 255, 0.28);
   }
 
+  /* The shared stylesheet uses space-between, which parks the links hard right
+     and leaves a ~200px void after the wordmark. Pack them left instead, let
+     the list absorb the remaining width, and push only the lab logo to the far
+     right so it still lines up with the content edge. */
+  .lion-navbar-inner {
+    justify-content: flex-start;
+    gap: 1.75rem;
+  }
+
+  .lion-nav-links { flex: 1 1 auto; }
+  .lion-nav-links li:last-child { margin-left: auto; }
+
   .lion-nav-lablogo img {
-    height: 52px;
+    height: 62px;
     width: auto;
     display: block;
     transition: opacity 0.2s, height 0.25s ease;
@@ -55,15 +72,55 @@
   /* Suppress the hover underline the text links get. */
   .lion-nav-links li a.lion-nav-lablogo::after { display: none; }
 
-  /* Shrink with the bar so it never outgrows the scrolled navbar. */
-  .lion-navbar-scrolled .lion-nav-lablogo img { height: 42px; }
+  /* Shrink with the bar so it never outgrows the scrolled navbar. That bar is
+     56px and the link adds 0.3rem padding top and bottom, so 44px is the
+     largest that still fits. */
+  .lion-navbar-scrolled .lion-nav-lablogo img { height: 44px; }
 
   @media (max-width: 420px) {
     .lion-navbar-logo .lion-logo-text { font-size: 1.05rem; }
   }
 
-  @media (max-width: 768px) {
-    /* In the stacked mobile menu the divider rule makes no sense. */
+  /* The shared stylesheet collapses to a hamburger at 768px, but this navbar —
+     a long wordmark, five links and the lab logo — needs about 1008px (the
+     wordmark is set in Bespoke Slab, which runs wider than Playfair did).
+     Between those two the row silently overflows and the lab logo is clipped
+     off the right edge, so collapse earlier here. Same declarations as the
+     shared mobile block, just at a wider breakpoint. */
+  @media (max-width: 1010px) {
+    .lion-menu-toggle { display: flex; }
+
+    /* undo the desktop packing — the menu is a full-width stacked dropdown */
+    .lion-navbar-inner { justify-content: space-between; }
+    .lion-nav-links li:last-child { margin-left: 0; }
+
+    .lion-nav-links {
+      flex: none;
+      display: none;
+      position: absolute;
+      top: 100%; left: 0; right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      background: var(--lion-main);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 0 1rem;
+      gap: 0;
+    }
+
+    .lion-nav-links.lion-nav-open { display: flex; }
+
+    .lion-nav-links li a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .lion-nav-links li:last-child a { border-bottom: none; }
+    .lion-nav-links li a::after { display: none; }
+
+    /* In the stacked menu the divider rule makes no sense. */
     .lion-nav-links li a.lion-nav-lablogo {
       border-left: none;
       margin-left: 0;

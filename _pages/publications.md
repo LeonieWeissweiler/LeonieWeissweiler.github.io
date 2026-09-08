@@ -29,7 +29,7 @@ permalink: /publications/
   }
 
   .pub-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--lion-heading-font);
     font-size: 1.05rem;
     font-weight: 400;
     color: var(--lion-ink);

@@ -34,7 +34,7 @@ permalink: /talks/
   }
 
   .talk-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--lion-heading-font);
     font-size: 1.15rem;
     font-weight: 400;
     color: var(--lion-ink);

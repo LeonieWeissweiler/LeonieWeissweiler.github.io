@@ -4,6 +4,13 @@
    shared design-system CSS works unchanged with either theme.
    ============================================================ */
 :root {
+  /* Typography
+     Headings use Bespoke Slab (the same face as the all-caps labels) rather
+     than the shared design system's Playfair Display. Body prose stays Lora.
+     Only a 400 weight of Bespoke Slab is bundled, so avoid bold headings —
+     the browser would synthesise them. */
+  --lion-heading-font: 'Bespoke Slab', Georgia, serif;
+
   /* Brand colours */
   --lion-main:        #2E436B;   /* navbar background */
   --lion-light:       #6B82AC;   /* light accent */
