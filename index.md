@@ -16,7 +16,9 @@ permalink: /
     /* stretch, not start: the columns share a height so the logo can grow to
        meet the bottom of the socials in the right-hand column */
     align-items: stretch;
-    margin-bottom: 3.5rem;
+    /* 2.25rem + the paragraph's leading lands the gap below the socials at
+       ~40px, down from 60px */
+    margin-bottom: 2.25rem;
   }
 
   .about-hero-left {
@@ -34,9 +36,13 @@ permalink: /
     margin: 0 0 0.5rem;
   }
 
+  /* Noto Serif, not Lora: Lora has no IPA glyphs, so ˈ ː ɪ ɐ and the combining
+     breve were being pulled from a system fallback and rendered at a different
+     size than the surrounding letters. Noto Serif covers the whole string, so
+     it renders in a single face. */
   .about-ipa {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 1.3rem;
+    font-family: 'Noto Serif', Georgia, serif;
+    font-size: 1.2rem;
     color: var(--lion-muted);
     margin: 0 0 1.25rem;
   }
