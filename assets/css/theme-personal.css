@@ -3,6 +3,23 @@
    Same variable names as lion-lab/assets/css/theme-lab.css, so the
    shared design-system CSS works unchanged with either theme.
    ============================================================ */
+/* Charis SIL — used only for the IPA transcription on the landing page.
+   It is the one face here that carries the full phonetic set, U+032F (the
+   combining breve marking a non-syllabic diphthong element) included. That
+   matters because a base letter and its combining mark must be shaped by a
+   single font: Google's Noto Serif splits them across two subset files, so
+   the whole ɪ̯ cluster fell back to a system font and rendered noticeably
+   smaller than the letters beside it.
+   SIL Open Font Licence 1.1 — see assets/fonts/CharisSIL-OFL.txt */
+@font-face {
+  font-family: 'Charis SIL';
+  src: url('/assets/fonts/CharisSIL-Regular.woff2') format('woff2'),
+       url('/assets/fonts/CharisSIL-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Typography
      Headings use Bespoke Slab (the same face as the all-caps labels) rather

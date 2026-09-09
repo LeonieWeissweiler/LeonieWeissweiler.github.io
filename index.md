@@ -36,12 +36,12 @@ permalink: /
     margin: 0 0 0.5rem;
   }
 
-  /* Noto Serif, not Lora: Lora has no IPA glyphs, so ˈ ː ɪ ɐ and the combining
-     breve were being pulled from a system fallback and rendered at a different
-     size than the surrounding letters. Noto Serif covers the whole string, so
-     it renders in a single face. */
+  /* Charis SIL, not Lora: Lora has no IPA glyphs at all, so ˈ ː ɪ ɐ and the
+     combining breve were pulled from a system fallback and rendered at a
+     different size than the letters around them. Charis carries the whole
+     string in one face, including the ɪ̯ cluster. */
   .about-ipa {
-    font-family: 'Noto Serif', Georgia, serif;
+    font-family: 'Charis SIL', Georgia, serif;
     font-size: 1.2rem;
     color: var(--lion-muted);
     margin: 0 0 1.25rem;
@@ -117,19 +117,23 @@ permalink: /
   .about-social {
     /* same width as the photo above it, so their edges line up */
     width: 92%;
-    /* A 3-column grid rather than wrapping flex: the split stays 3 + 3 at any
-       container width, instead of flipping to 4 + 2 once there's room for a
-       fourth. space-between puts column 1 flush left and column 3 flush right,
-       so Email's left edge and LinkedIn's right edge meet the photo's edges. */
-    display: grid;
-    grid-template-columns: auto auto auto;
+    /* Flex with space-between, so the free space on each row is divided evenly
+       between its items — a grid would size each column to its widest item and
+       leave visibly unequal gaps. The 3 + 3 split is forced by .social-break
+       rather than left to where the line happens to run out. */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.75rem 1.125rem;
     align-items: center;
   }
 
-  /* right-align the third column so X sits under LinkedIn, both flush right */
-  .about-social a:nth-child(3n) { justify-self: end; }
+  /* zero-height full-width item: forces a wrap after the third link */
+  .about-social .social-break {
+    flex: 0 0 100%;
+    height: 0;
+    margin: 0;
+  }
 
   /* The three columns need ~309px including gaps. Below ~1150px the column
      tightens, so drop the minimum gap; space-between re-widens it wherever
@@ -138,16 +142,6 @@ permalink: /
     .about-social { column-gap: 0.4rem; }
   }
 
-  /* Below ~1040px three columns no longer fit and the labels would wrap inside
-     their cells. Fall back to two columns over three rows rather than
-     collapsing the whole hero — there is still plenty of horizontal room here.
-     Column 1 stays flush left and column 2 flush right, so Email's left edge
-     and LinkedIn's right edge still meet the photo's. */
-  @media (max-width: 1040px) and (min-width: 901px) {
-    .about-social { grid-template-columns: auto auto; }
-    .about-social a:nth-child(3n) { justify-self: auto; }
-    .about-social a:nth-child(2n) { justify-self: end; }
-  }
 
   .about-social a {
     font-family: 'Lora', Georgia, serif;
@@ -271,11 +265,10 @@ permalink: /
     .about-social {
       width: 100%;
       min-width: 0;
-      display: flex;
-      flex-wrap: wrap;
       justify-content: flex-start;
     }
-    .about-social a:nth-child(3n) { justify-self: auto; }
+    /* full page width here — let them pack rather than spread over three rows */
+    .about-social .social-break { display: none; }
     .about-lablogo { flex: 0 0 auto; position: static; margin-bottom: 0.5rem; }
     .about-lablogo img { position: static; width: 240px; height: auto; aspect-ratio: 5250 / 2000; }
   }
@@ -319,12 +312,14 @@ permalink: /
           <img src="{{ '/assets/img/logos/scholar.png' | relative_url }}" alt="">
           Google Scholar
         </a>
-        <!-- Order is chosen so the six wrap 3 + 3 rather than 2 + 3 + 1:
-             the short "X" closes the first line after the long "Google Scholar". -->
         <a href="https://x.com/LAWeissweiler" target="_blank" rel="noopener">
           <img src="{{ '/assets/img/logos/twitter.svg' | relative_url }}" alt="">
           X
         </a>
+
+        <!-- forces the 3 + 3 split; hidden once the layout stacks -->
+        <span class="social-break"></span>
+
         <a href="https://github.com/LeonieWeissweiler" target="_blank" rel="noopener">
           <img src="{{ '/assets/img/logos/github.svg' | relative_url }}" alt="">
           GitHub

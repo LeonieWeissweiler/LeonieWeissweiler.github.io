@@ -4,12 +4,8 @@
 <!-- Shared LION design system — served straight out of the lion-lab submodule -->
 <link rel="stylesheet" href="{{ '/lion-lab/assets/css/lion-navbar.css' | relative_url }}">
 
-<!-- Noto Serif is used only for the IPA transcription on the landing page.
-     Neither Lora nor Bespoke Slab contains the IPA glyphs (ˈ ː ɪ ɐ and the
-     combining breve U+032F), so those characters were being substituted from a
-     system font mid-word and rendered at a visibly different size. Noto Serif
-     is the one Google family whose subsets cover all of them, U+032F included. -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400&display=swap">
+<!-- The IPA transcription is set in Charis SIL, self-hosted; the @font-face
+     lives in theme-personal.css alongside the reason why. -->
 
 <!-- Filename carries the mark's name rather than a generic "favicon", which also
      forces browsers past their (very sticky) cache of the previous icon. -->
