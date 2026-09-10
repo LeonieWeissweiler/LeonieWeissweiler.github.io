@@ -6,17 +6,34 @@
 #
 # To add an item, copy a block and paste it at the TOP of the list.
 
+- date: "August 2026"
+  body: >-
+    I took part in the <a href="https://ml4chem2026.github.io/#program">career round table</a> at
+    ML4Chem 2026 — Modern ML in Chemistry, a discussion of research careers inside and outside
+    academia, hosted by the Faculty of Chemistry at Leipzig University.
+
 - date: "June 2026"
   body: >-
     Invited talk on "Hybrid Human-LLM Corpus Construction and LLM Evaluation for the Caused-Motion Construction" at the <a href="https://fdhl.info/veranstaltungen/digital-humanities-open-garden/opengarden2026/">Digital Humanities Open Garden 2026</a>, hosted by the FDHL at the <a href="https://www.saw-leipzig.de/en">Saxon Academy of Sciences and Humanities in Leipzig</a>.
 
 - date: "June 2026"
   body: >-
-    Invited talk on "Expanding the Linguistic Evaluation of Language Models, or: What to do now that LMs are good" at the <a href="https://www.cl.uni-heidelberg.de/colloquium/">Heidelberg Colloquium on Computational Linguistics</a>.
+    Invited talk on "Expanding the Linguistic Evaluation of Language Models, or: What to do now that LMs are good" at the <a href="https://www.cl.uni-heidelberg.de/colloquium/">Heidelberg Colloquium on Computational Linguistics</a>, and at the <a href="https://www.h-its.org/">Heidelberg Institute for Theoretical Studies (HITS)</a>.
 
 - date: "May 2026"
   body: >-
     I'm going to be a tutorial chair at <a href="https://2027.coling-iccl.org/">COLING 2027</a> in Macau, together with <a href="https://www.utn.de/person/prof-dr-michael-roth/">Michael Roth</a>. We can be reached at <a href="mailto:coling27tutorialchairs@googlegroups.com">coling27tutorialchairs@googlegroups.com</a>.
+
+- date: "May 2026"
+  body: >-
+    Invited talk on <i>Computational Typology?</i> in the
+    <a href="https://www.eva.mpg.de/linguistic-and-cultural-evolution/staff/">Department of Linguistic and Cultural Evolution</a>
+    at the Max Planck Institute for Evolutionary Anthropology in Leipzig.
+
+- date: "April 2026"
+  body: >-
+    Our paper <a href="https://arxiv.org/abs/2605.31586"><i>Language Models Learn Constructional Semantics, Not To Mention Syntax</i></a>
+    was accepted to <a href="https://conll.org/">CoNLL 2026</a>.
 
 - date: "April 2026"
   body: >-
@@ -126,12 +143,6 @@
     Invited talk at Copenhagen University on "Constructions all the way down: rethinking linguistic
     generalisation in LLMs".
 
-- date: "March 2025"
-  body: >-
-    I received a Short Term Scientific Mission (STSM) grant through the <a
-    href="https://unidive.lisn.upsaclay.fr/doku.php?id=start">UniDive COST Action</a> to visit
-    Uppsala University for one month from May to June 2025.
-
 - date: "May 2025"
   body: >-
     Invited talks at LMU Munich and Leipzig University on "Understanding Language in Language Models: The Role of
@@ -141,6 +152,12 @@
   body: >-
     Invited talks at Stanford University and the University of Nevada at Reno on the topic of
     "Constructions all the way down: rethinking linguistic generalisation in LLMs".
+
+- date: "March 2025"
+  body: >-
+    I received a Short Term Scientific Mission (STSM) grant through the <a
+    href="https://unidive.lisn.upsaclay.fr/doku.php?id=start">UniDive COST Action</a> to visit
+    Uppsala University for one month from May to June 2025.
 
 - date: "February 2025"
   body: >-
