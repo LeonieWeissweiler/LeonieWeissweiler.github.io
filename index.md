@@ -47,6 +47,15 @@ permalink: /
     margin: 0 0 1.25rem;
   }
 
+  /* Divides the German spelling from the pronunciation. Lighter than either,
+     so it separates without becoming a third thing to read. */
+  .about-ipa-sep {
+    color: var(--lion-faint);
+    padding: 0 0.5rem;
+  }
+
+  .about-ipa-part { white-space: nowrap; }
+
   /* Deliberately set in the heading face, not the body face, so it reads as a
      subtitle to the name rather than as the first line of the bio. */
   .about-role {
@@ -280,7 +289,10 @@ permalink: /
   <div class="about-hero">
     <div class="about-hero-left">
       <h1>Leonie Weissweiler</h1>
-      <p class="about-ipa">/ˈleːoni ˈvaɪ̯svaɪ̯lɐ/</p>
+      <!-- The <wbr> is the only place this line may break: each half is nowrap,
+           so on a narrow screen it splits after the dot rather than mid-name or
+           mid-transcription. -->
+      <p class="about-ipa"><span class="about-ipa-part">Leonie Weißweiler</span><span class="about-ipa-sep">·</span><wbr><span class="about-ipa-part">/ˈleːoni ˈvaɪ̯svaɪ̯lɐ/</span></p>
       <div class="lion-page-rule"></div>
 
       <p class="about-role">
