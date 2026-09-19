@@ -1,20 +1,26 @@
 name: Update publications from Google Scholar
 
-# Refreshes _data/publications.yml. Runs weekly, and can be triggered by hand
-# from the Actions tab.
+# Refreshes _data/publications.yml from Google Scholar.
 #
-# CAVEAT: Google Scholar serves a CAPTCHA to datacenter IP ranges, and GitHub's
-# runners are squarely in those ranges. This job will therefore fail some or
-# most of the time — that is expected, and it fails loudly without touching the
-# committed data. When it does, run the script yourself:
+# MANUAL ONLY. There used to be a weekly cron here; it ran twice and failed
+# both times. Google Scholar serves a CAPTCHA to datacenter IP ranges and
+# GitHub's runners sit squarely in those ranges, so the scrape cannot succeed
+# from here — no amount of retrying or reworking the script changes that. The
+# schedule was removed rather than left to send a failure mail every Monday.
+#
+# To refresh the list, run it yourself — from a normal connection it works
+# fine, which is how the current data was generated:
 #
 #     python3 bin/update_publications.py
 #
-# and commit the result.
+# then commit _data/publications.yml.
+#
+# Running it here via "Run workflow" is kept for the day the block lifts, or
+# if the script is ever pointed at a source that datacenter IPs can reach. It
+# will almost certainly fail today, and fails loudly without touching the
+# committed data.
 
 on:
-  schedule:
-    - cron: "0 4 * * 1"   # Mondays, 04:00 UTC
   workflow_dispatch:
 
 permissions:

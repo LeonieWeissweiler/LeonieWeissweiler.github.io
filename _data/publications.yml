@@ -2,7 +2,7 @@
 # do not edit by hand; your changes will be overwritten on the next run.
 #
 # Source: https://scholar.google.com/citations?user=o4fK4n4AAAAJ
-# Last updated: 2026-07-31
+# Last updated: 2026-09-19
 
 - title: "Language Models Learn Constructional Semantics, Not To Mention Syntax: Investigating LM Understanding of Paired-Focus Constructions"
   authors: "Wesley Scivetti, Ethan Gotlieb Wilcox, Nathan Schneider, Kanishka Misra, Leonie Weissweiler"
@@ -16,7 +16,7 @@
   year: "2025"
   url: "https://aclanthology.org/2025.cxgsnlp-1.0.pdf"
 
-- title: "Findings of the UniDive 2025 shared task on multilingual Morpho-Syntactic Parsing"
+- title: "Findings of the UniDive 2025 shared task on multilingual morpho-syntactic parsing"
   authors: "Omer Goldman, Leonie Weissweiler, Kutay Acar, Diego Alves, Anna Bączkowska, Gülşen Eryiğit, Lenka Krippnerová, Adriana Pagano, Tanja Samardzic, Luigi Talamo, Alina Wróblewska, Daniel Zeman, Joakim Nivre, Reut Tsarfay"
   venue: "Proceedings of The UniDive 2025 Shared Task on Multilingual Morpho-Syntactic Parsing"
   year: "2025"
@@ -32,7 +32,7 @@
   authors: "Jaap Jumelet, Leonie Weissweiler, Joakim Nivre, Arianna Bisazza"
   venue: "Transactions of the Association for Computational Linguistics (TACL)"
   year: "2025"
-  url: "https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.600/134999"
+  url: "https://aclanthology.org/2026.tacl-1.10/"
 
 - title: "Both direct and indirect evidence contribute to dative alternation preferences in language models"
   authors: "Qing Yao, Kanishka Misra, Leonie Weissweiler, Kyle Mahowald"
@@ -97,11 +97,11 @@
   authors: "David R Mortensen, Valentina Izrailevitch, Yunze Xiao, Hinrich Schütze, Leonie Weissweiler"
   venue: "Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)"
   year: "2024"
-  url: "https://aclanthology.org/2024.lrec-main.1508/"
+  url: "https://arxiv.org/abs/2403.17856"
 
 - title: "UCxn: Typologically Informed Annotation of Constructions Atop Universal Dependencies"
   authors: "Leonie Weissweiler, Nina Böbel, Kirian Guiller, Santiago Herrera, Wesley Scivetti, Arthur Lorenzi, Nurit Melnik, Archna Bhatia, Hinrich Schütze, Lori Levin, Amir Zeldes, Joakim Nivre, William Croft, Nathan Schneider"
-  venue: "Joint International Conference on Computational Linguistics, Language Resources and Evaluation"
+  venue: "Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING)"
   year: "2024"
   url: "https://aclanthology.org/2024.lrec-main.1471/"
 
@@ -109,7 +109,7 @@
   authors: "Leonie Weissweiler, Abdullatif Köksal, Hinrich Schütze"
   venue: "Northern European Journal of Language Technology (NEJLT)"
   year: "2024"
-  url: "https://nejlt.ep.liu.se/article/view/5256"
+  url: "https://aclanthology.org/2025.nejlt-1.2/"
 
 - title: "Counting the Bugs in ChatGPT's Wugs: A Multilingual Investigation into the Morphological Capabilities of a Large Language Model"
   authors: "Leonie Weissweiler, Valentin Hofmann, Anjali Kantharuban, Anna Cai, Ritam Dutt, Amey Hengle, Anubha Kabra, Atharva Kulkarni, Abhishek Vijayakumar, Haofei Yu, Hinrich Schütze, Kemal Oflazer, David R Mortensen"
